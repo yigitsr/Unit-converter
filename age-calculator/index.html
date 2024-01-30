@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="ageCalc">
+
+    
+
+   <input type="text" placeholder="enter your birth year" id="year">
+    <button onclick="calculateAge()">Enter</button>
+
+<span id="ageSpan"></span>
+</div>
+
+
+
+
+<script>
+        const _ageSpan = document.getElementById('ageSpan')
+
+        function calculateAge(){            
+            // const _year = parseInt(document.getElementById('year')["value"]);
+            const _year = parseInt(document.getElementById('year').value);
+            _ageSpan.innerHTML = new Date().getFullYear() - _year;
+
+        }
+
+
+        
+
+
+</script>
+
+
+<script src="id.js"></script>
+</body>
+</html>
