@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace
+}
+
+body{
+    height: 100vh;
+    background: #fcf9f9
+}
+
+.flex{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+.big-header{
+    font-size: 2rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+
+.bottomBar{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.bottomBar input{
+    width: 50%;
+}
+
+.links{
+    width: 100%;
+    background: rgb(53, 82, 88) !important;
+    justify-content: space-evenly;
+    padding: 1% 0;
+}
+
+.container{
+    padding-top: 5vh;
+    display: flex;
+    gap: 2vh;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.modal{
+    width: 250px;
+    height: 20vh;
+    background: #6a91c1;
+    border-radius: 12px;
+    color: #0c3260;
+    font-weight: 600;
+    z-index: 1111;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10vw 100vw #00000060;
+    opacity: 1;
+    animation: modalAnim .3s;
+}
+
+.modal-close{
+    position: absolute;
+    width: 30px;
+    border-radius: 120px;
+    aspect-ratio: 1/1;
+    top: -5px;
+    right: -5px;
+    border: 1px solid rgb(11, 42, 200);
+    background: #d5d5d5;
+    color: rgb(106,104,191);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes modalAnim {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+input{
+    width: 100%
+}
+
+button{
+    margin: 2% 0;
+    padding: 1.5% 4%;
+    border-radius: 6px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    background: rgb(64, 193, 222);
+    color: rgb(19, 50, 57)
+}
+
+button:hover{
+    transition: 300ms;
+    background: rgb(26, 152, 180);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(64, 193, 222) 
+}
+
+.btn-secondary{
+
+    border-radius: 8px;
+    text-align: center;
+    background: rgb(19, 50, 57);
+    color: #fff;
+    padding: .6% 1%;
+    text-decoration: none;
+}
+
+.btn-secondary:hover{
+    transition: 300ms ;
+    background: rgb(51, 101, 112)
+}
+
+.box{
+    padding: 1%;
+    width: 20%;
+    border-radius: 6px;
+    /*  x y blur spread color  */
+    box-shadow: 0 0 15px 3px #bcbcbc
+}
+
+.to-unit-btn{
+    margin: 50px auto 0 auto;
+    padding: 1% 0;
+    cursor: pointer;
+    font-weight: 600;
+    background: rgb(64, 193, 222)
+}
+
+.to-unit-btn a{
+    width: 200px;
+    padding: 1%;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    background: rgb(20, 104, 123);
+    text-decoration: none
+}
+
+.to-unit-btn a:hover{
+    transition: 300ms;
+    color: rgb(255, 255, 255);
+    background: rgb(7, 84, 102);
+    box-shadow: 0 0 10px rgb(64, 193, 222) 
+}
+
+.toast-msg{
+    z-index: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(73, 166, 210);
+    color: #fff;
+    width: 300px;
+    height: 60px;
+    border-radius: 12px ;
+    /* box-shadow: 0 0 20vw 20vw #000000; */
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+    animation: fadeInUp .5s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0);
+        opacity: 0;
+    }
+
+    to{
+        transform: translate3d(0,0,0);
+        opacity: 1 ;
+    }
+    
+}
+
+.toast-div{
+    width: 100%;
+    border: 1px solid rgb(31, 65, 143);
+}

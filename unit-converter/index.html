@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"">
+    <title>Unit Converter</title>
+</head>
+<body>
+
+
+    <div class="to-unit-btn flex">
+        <a href="./unitconverter/">Unit Converter</a>
+    </div>
+
+    <div class="to-unit-btn flex">
+        <a href="./mathoperations/">Math Operations</a>
+    </div>
+
+
+    <div class="bottomBar">
+
+        <div class="box">      
+            <input type="text" placeholder="enter your birth year" id="year">
+                <button onclick="calculateAge()">Enter</button>
+                <p><span id="ageSpan"></span></p> 
+        </div>
+
+        <button id="showDateBtn" onclick="showDate()">Show full date</button>
+        <div id="showDateId"></div>
+        <br>
+        <div id="footerYear"></div>
+        <br>
+        <div id="performance"></div>
+
+    </div>
+
+
+    <div class="toast-div flex">
+        <button onclick="showToast()">Show Toast</button>
+    </div>
+    
+    <div id="toast" class="toast-msg flex">Here's a beautiful toast message!</div>
+
+
+
+    <script src="js/common.js"></script>
+    <script src="js/converter.js"></script>
+    <script src="js/math.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>

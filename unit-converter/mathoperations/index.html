@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="links flex">
+        <a href="./../index.html" class="btn-secondary">Home</a>
+        <a href="./../unitconverter/" class="btn-secondary">Unit Converter</a>
+   </div>
+
+
+    <div class="container">
+
+    <div class="big-header">Math Operations</div>
+
+        <div class="box">     
+            <h2>Find Square Root</h2> 
+
+            <input type="text" placeholder="enter a num to find its square root" id="sqRootId">
+            <button onclick="calculateSquareRoot()">Enter</button>
+          <p><span id="sqrtRootSpan"></span></p>
+        </div>
+
+        <div class="box">     
+            <h2>Prime Number Checker</h2> 
+
+            <input type="text" placeholder="enter a num to find whether it's a prime number" id="primeId">
+            <button onclick="checkIfPrime()">Enter</button>
+          <p><span id="primeSpan"></span></p>
+        </div>
+
+
+        <div class="box">     
+            <h2>Find divisors</h2> 
+
+            <input type="text" placeholder="enter a num to find its divisors" id="divisorId">
+            <button onclick="findDivisors()">Enter</button>
+          <p><span id="divisorSpanFirst"></span></p>
+          <p><span id="divisorSpan"></span></p>
+        </div>
+
+    </div>
+
+    <script src="./../js/math.js"></script>
+    <script src="./../js/common.js"></script>
+    <script src="./../js/modal.js"></script>
+</body>
+</html>
