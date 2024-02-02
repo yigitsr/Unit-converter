@@ -11,8 +11,9 @@
 
     <div class="links flex">
         <a href="./../index.html" class="btn-secondary">Home</a>
-        <a href="./../unitconverter/" class="btn-secondary">Unit Converter</a>
-   </div>
+        <a href="./../unitconverter/" class="btn-secondary">Unit Converter</a> 
+        <button class="reset-btn" onclick="refreshPage()">Reset</button>  
+    </div>
 
 
     <div class="container">
@@ -24,25 +25,37 @@
 
             <input type="text" placeholder="enter a num to find its square root" id="sqRootId">
             <button onclick="calculateSquareRoot()">Enter</button>
+          <p><span id="sqrtRootSpanFirst"></span></p>
           <p><span id="sqrtRootSpan"></span></p>
         </div>
 
-        <div class="box">     
+        <div id="prime-result" class="box ">     
             <h2>Prime Number Checker</h2> 
 
             <input type="text" placeholder="enter a num to find whether it's a prime number" id="primeId">
             <button onclick="checkIfPrime()">Enter</button>
+          <p><span id="primeSpanFirst"></span></p>
           <p><span id="primeSpan"></span></p>
         </div>
 
 
         <div class="box">     
-            <h2>Find divisors</h2> 
+            <h2>Find Divisors</h2> 
 
             <input type="text" placeholder="enter a num to find its divisors" id="divisorId">
             <button onclick="findDivisors()">Enter</button>
           <p><span id="divisorSpanFirst"></span></p>
           <p><span id="divisorSpan"></span></p>
+        </div>
+
+
+        <div class="box">     
+            <h2>Find Factorial</h2> 
+
+            <input type="text" placeholder="enter a num to find its divisors" id="factId">
+            <button onclick="findFactorial()">Enter</button>
+          <p><span id="factSpanFirst"></span></p>
+          <p><span id="factSpan"></span></p>
         </div>
 
     </div>

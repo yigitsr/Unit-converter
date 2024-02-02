@@ -137,6 +137,14 @@ button:hover{
     background: rgb(51, 101, 112)
 }
 
+.reset-btn{
+    border-radius: 8px;
+    text-align: center;
+    color: rgb(19, 50, 57);
+    padding: .6% 1%;
+    text-decoration: none;
+}
+
 .box{
     padding: 1%;
     width: 20%;
@@ -205,4 +213,14 @@ button:hover{
 .toast-div{
     width: 100%;
     border: 1px solid rgb(31, 65, 143);
+}
+
+.correct-answer{
+    transition: 500ms;
+    background: rgb(157, 224, 157);
+}
+
+.wrong-answer{
+    transition: 500ms ;
+    background: rgb(228, 136, 136);
 }

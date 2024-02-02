@@ -1,3 +1,12 @@
+HTMLElement.prototype.toggleClass = function(_addClass, _removeClass){
+    this.classList.add(_addClass)
+    this.classList.remove(_removeClass)
+}
+
+function refreshPage(){
+    window.location.reload()
+}
+
 //miscellaneous
 const _performance = document.getElementById('performance')
 const _footerYear = document.getElementById('footerYear')
