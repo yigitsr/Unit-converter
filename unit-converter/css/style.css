@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    height: 100vh;
+    height: 95vh;
     background: #fcf9f9
 }
 
@@ -154,7 +154,7 @@ button:hover{
 }
 
 .to-unit-btn{
-    margin: 50px auto 0 auto;
+    margin: 5vh auto;
     padding: 1% 0;
     cursor: pointer;
     font-weight: 600;

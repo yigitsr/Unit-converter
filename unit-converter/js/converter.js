@@ -2,7 +2,16 @@ function calculateAge(){
     // const _year = parseInt(document.getElementById('year')["value"]);
     const _ageSpan = document.getElementById('ageSpan')
     const _year =  parseInt(document.getElementById('year').value)
-    _ageSpan.innerHTML =  'You are ' + (new Date().getFullYear() - _year) + ' years old'
+    const _ageDiv = document.getElementById('age-div')
+    const _result = (new Date().getFullYear() - _year) 
+
+    _ageSpan.innerHTML =  'You are ' + _result + ' years old'
+
+    if(_result >= 18)
+        _ageDiv.toggleClass('correct-answer', 'wrong-answer')
+    else
+        _ageDiv.toggleClass('wrong-answer', 'correct-answer')
+
 }
 
 function convertFeetToMeter(){
