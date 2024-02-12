@@ -42,3 +42,20 @@ function convertFahToCel(){
     const _fahFormula = ( _fahr -32 ) / 1.8
     _fahSpan.innerHTML = _fahr + '°F = ' + _fahFormula + '°C '
  }
+ 
+ function convertOzToMl(){
+    const _ounceSpan = document.getElementById('ounceSpan')
+    const _ounce = document.getElementById('ounce').value
+    const _ounceFormula = _ounce * 29.57
+
+    _ounceSpan.innerHTML = _ounce + ' oz = ' + _ounceFormula + ' ml'
+ }
+
+ function convertGallonToLitres(){
+    const _gallonSpan = document.getElementById('gallonSpan') 
+    const _gallon = document.getElementById('gallon').value
+    const _gallonFormula = _gallon * 3.78
+
+    _gallonSpan.innerHTML  = _gallon + ' gallon = ' + _gallonFormula + ' lt' 
+
+ }
