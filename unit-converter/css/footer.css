@@ -1,0 +1,22 @@
+.footer-class{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(2, 39, 48);
+    color: rgb(255, 255, 255);
+    padding: 1%
+}
+
+.footer-class a{
+    color: #fff;
+    text-decoration: none
+}
+
+.footer-class a:hover{
+    color: rgb(165, 165, 224);
+    transition: 300ms
+}
