@@ -4,7 +4,7 @@ Preview: https://onlineunitconverter.netlify.app
 
 # Screenshots
 ## Home page
-![Screenshot 2024-02-12 at 16 37 53](https://github.com/yigitsr/Unit-converter/assets/55548182/c1a0428b-21d1-430a-93cd-868a2dca9172)
+![Screenshot 2024-02-13 at 17 17 43](https://github.com/yigitsr/Unit-converter/assets/55548182/32b245a9-0dc0-4fdb-a528-f761a972667d)
 
 ## Unit Converter
 ![Screenshot 2024-02-12 at 16 38 18](https://github.com/yigitsr/Unit-converter/assets/55548182/00aa0242-7b51-4da2-b84a-50f6c9983f37)
