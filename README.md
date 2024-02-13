@@ -1,4 +1,6 @@
-# Age-calculator
+# Unit Converter
+
+Quick, free, online unit converter that converts common units of measurement and calculates math operations.
 
 Preview: https://onlineunitconverter.netlify.app
 
