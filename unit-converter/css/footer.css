@@ -1,5 +1,5 @@
 .footer-class{
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
     display: flex;
@@ -8,7 +8,8 @@
     flex-direction: column;
     background: rgb(2, 39, 48);
     color: rgb(255, 255, 255);
-    padding: 1%
+    padding: 1%;
+    height: 8vh;
 }
 
 .footer-class a{

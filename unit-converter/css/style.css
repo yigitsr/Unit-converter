@@ -5,12 +5,22 @@
 }
 
 html{
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body{
-    height: 95vh;
+    height: 100%;
     background: #fcf9f9
+}
+
+.body-wrapper{
+    padding-top: 2%;
+    height: 100vh
+}
+
+.footer-home{
+    position: absolute !important;
+    bottom: 0 !important
 }
 
 a{
@@ -34,7 +44,7 @@ a{
 .bottomBar{
     position: absolute;
     width: 100%;
-    bottom: 10px;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +59,8 @@ a{
     width: 100%;
     background: rgb(53, 82, 88) !important;
     justify-content: space-evenly;
-    padding: 1% 0
+    padding: 1% 0;
+    height: 8vh;
 }
 
 .container{
@@ -59,7 +70,10 @@ a{
     flex-wrap: wrap;
     padding-top: 5vh;
     gap: 2vh;
-    width: 100%
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 5%;
+    height: 84vh;
 }
 
 .modal{

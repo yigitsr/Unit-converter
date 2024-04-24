@@ -1,0 +1,27 @@
+@media only screen and (orientation: portrait) {
+
+    .box{
+      padding: 1%;
+      width: 80%;
+      border-radius: 6px;
+      /*  x y blur spread color  */
+      box-shadow: 0 0 15px 3px #bcbcbc
+  }
+
+  input{
+    height: 3.5vh
+  }
+
+  .mobile-height{
+    height: 10% !important
+  }
+
+  .to-unit-btn a, .contact-btn a{
+    width: 40%;
+    height: 60%;
+  }
+
+  .footer-class{
+    font-size: .8em
+  }
+  }
