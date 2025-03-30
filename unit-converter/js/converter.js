@@ -14,11 +14,18 @@ function calculateAge(){
 
 }
 
-function convertFeetToMeter(){
-    const _feetSpan = document.getElementById('feetSpan')
-    const _feet = parseInt(document.getElementById('feet').value)
-    const _feetFormula =  Math.ceil(_feet / 3.28084) 
-    _feetSpan.innerHTML = _feet + ' feet = ' + _feetFormula + ' m'
+// function convertFeetToMeter(){
+//     const _feetSpan = document.getElementById('feetSpan')
+//     const _feet = parseInt(document.getElementById('feet').value)
+//     const _feetFormula =  Math.ceil(_feet / 3.28084) 
+//     _feetSpan.innerHTML = _feet + ' feet = ' + _feetFormula + ' m'
+// }
+
+function convertFeetToMeter() {
+    const _feetSpan = document.getElementById('feetSpan');
+    const _feet = parseFloat(document.getElementById('feet').value); // Use parseFloat to handle decimals
+    const _feetFormula = Math.floor((_feet / 3.28084) * 100) / 100; // Truncate to 2 decimal places
+    _feetSpan.innerHTML = `${_feet} feet = ${_feetFormula} m`;
 }
 
 function convertMileToMeter(){
